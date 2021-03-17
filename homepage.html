@@ -5,23 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painting With Music</title>
-    <script src="freeplay.js"></script>
+    <script src="homepage.js"></script>
     <link rel="stylesheet" href="homepage.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41bf6b2e83.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="bg-gray-900 flex justify-between h-20 place-items-center px-4 py-3">
-        <div>
-            <button type="button" onclick="changePage()">
-                <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
-            </button>
-        </div>
-        <div class="text-purple-400 text-4xl">
-            Painting with Music
-        </div>
+    <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3">
         <div>
             <i class="fas fa-palette fa-3x text-purple-400"></i>
+        </div>
+        <div class="text-purple-400 sm:text-lg lg:text-4xl px-3 py-3 flex-1 justify-between items-center">
+            <span>Painting With Music</span>
+        </div>
+        <div class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-column">
+                <a href="freeplay.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Free Play</span>
+                </a>
+                <a href="coloring.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Coloring Play</span>
+                </a>
+                <a href="tutorial.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Tutorial</span>
+                </a>
+                <a href="tutorial.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>About</span>
+                </a>
+                <a href="tutorial.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Testing</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="inline-flex rounded lg:hidden">
+                <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
+            </button>
         </div>
     </header>
 
