@@ -10,13 +10,15 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41bf6b2e83.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="bg-gray-900 flex justify-between h-20 place-items-center px-4 py-3">
-        <div>
+
+
+<body class="bg-gray-700">
+    <header class="flex justify-between h-20 place-items-center px-4 py-3 top-0" style="background: url('navBack.jpg') no-repeat; background-size: cover;">
+        <!-- <div>
             <button type="button" onclick="">
                 <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
             </button>
-        </div>
+        </div> -->
         <div class="text-purple-400 text-4xl">
             Tutorial
         </div>
@@ -36,12 +38,69 @@
         </div>
     </header>
 
-    <main class="flex bg-gray-800  justify-between place-items-center w-full h-screen">
-        <div class="bg-purple-700 h-full w-40">TESTING</div>
-        <div class="">
-            <img src="artwork.jpg" alt="">
+    <main class="z-0">
+        <div class="flex bg-gray-800 relative justify-between place-items-center w-full h-screen">
+            <div class="bg-purple-900 h-full w-1/5">TESTING</div>
+            <div class="w-screen h-screen relative bg-cover" style="background: url('background.jpg') no-repeat; background-size: cover;">
+                <img class="w-2/3 z-0 absolute" src="controls.png" alt="">
+                <div class="bg-white mt-32 h-24 w-2/3 absolute rounded-r flex items-center justify-center top-0" style="background: url('leftTick.png') no-repeat; background-size: 850px 95px; ">
+                    <p class="text-4xl absolute text-orange-400" >
+                        How to Use the Potentiometers
+                    </p>
+                </div>
+                <div class="absolute z-1 bg-white w-2/3 rounded-l mb-24 bottom-0 right-0 flex items-center justify-center" style="background: url('rightTick.png') no-repeat; background-size: cover">
+                    <p class="text-orange-400 m-5 text-md" >
+                        The hardware controller has three circle potentiometers, or “pots”.
+                        all the pots work in the same fashion.  They are used to control an audio 
+                        effect and a Paintbrush effect at the same time.  Turn the knobs to control
+                        the effect levels.
+                        <br>
+                        <br>
+                        Pot 1 : this pot is used to control the reverb level, and also affects the 
+                        width of the paintbrush stroke.
+                        <br>
+                        <br>
+                        Pot 2 : this pot is used to control the distortion level of the audio, and 
+                        simultaneously affects the jitter of the paintbrush.
+                        <br>
+                        <br>
+                        Pot 3 : the third pot is used to control a high-pass filter level, and is 
+                        also responsible for the color saturation level. 
+                        <br>
+                    </p>  
+                </div>
+            </div>
+            <div  class="bg-purple-900 h-full w-1/5">TESTING</div>
         </div>
-        <div  class="bg-purple-700 h-full w-40">TESTING</div>
+        <div class="flex bg-gray-800 relative justify-between place-items-center w-full h-screen ">
+            <div class="bg-purple-700 h-full w-1/5">TESTING</div>
+            <div class="w-screen h-screen relative bg-pink-400">
+                <img class="w-2/3 " src="controls.png" alt="">
+                <div class="bg-white mt-20 h-20 w-2/3 rounded-r absolute top-0">
+                    This is some text
+                </div>
+                <div class="bg-white w-2/3 rounded-l absolute right-0">
+                        The hardware controller has three circle potentiometers, or “pots”.
+                        all the pots work in the same fashion.  They are used to control an audio 
+                        effect and a Paintbrush effect at the same time.  Turn the knobs to control
+                        the effect levels.
+                        <br>
+                        <br>
+                        Pot 1 : this pot is used to control the reverb level, and also affects the 
+                        width of the paintbrush stroke.
+                        <br>
+                        <br>
+                        Pot 2 : this pot is used to control the distortion level of the audio, and 
+                        simultaneously affects the jitter of the paintbrush.
+                        <br>
+                        <br>
+                        Pot 3 : the third pot is used to control a high-pass filter level, and is 
+                        also responsible for the color saturation level.   
+                </div>
+            </div>
+            <div  class="bg-purple-700 h-full w-1/5">TESTING</div>
+        </div>
+        
     </main>
 
 </body>
