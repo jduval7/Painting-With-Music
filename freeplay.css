@@ -20,6 +20,28 @@
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
   }
 
+  #sliderBW {
+    -webkit-appearance: none;
+    width: 300px;
+    height:40px;
+    bottom: 40%;
+    background-image: url('/blackWhite.png');
+    background-size: 300px 120px;
+    filter: drop-shadow(-10px 6px 10px);
+}
+
+#sliderBW::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   border: 1px solid lightgray;
+   height: 36px;
+   width: 10px;
+   border-radius: 3px;
+   background: gray;
+   cursor: pointer;
+   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+ }
+
   .select-css {
     display: block;
     font-size: 16px;
@@ -91,3 +113,12 @@
     border-color: #aaa;
   }
   
+
+  @font-face {
+    font-family: paint;
+    src: url(paint.ttf);
+  }
+
+  #title {
+      font-family: paint;
+  }

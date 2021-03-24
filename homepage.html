@@ -11,13 +11,14 @@
     <script src="https://kit.fontawesome.com/41bf6b2e83.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3">
-        <!-- <div>
+    <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3"  style="background: url('navBack.jpg') no-repeat; background-size: cover;">
+        <div>
             <i class="fas fa-palette fa-3x text-purple-400"></i>
-        </div> -->
-        <div class="text-purple-400 sm:text-lg lg:text-4xl px-3 py-3 flex-1 justify-between items-center">
-            <span>Painting With Music</span>
         </div>
+        <div class="text-purple-400 sm:text-lg lg:text-4xl px-3 py-3 flex-1 justify-between items-center">
+            <span id="title"></span>
+        </div>
+        <div class="text-purple-200 text-5xl ml-64 tracking-widest mt-2" id="title">~ Painting with Music ~ </div>
         <div class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
             <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-column">
                 <a href="freeplay.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
@@ -32,9 +33,6 @@
                 <a href="tutorial.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
                     <span>About</span>
                 </a>
-                <a href="tutorial.html" class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
-                    <span>Testing</span>
-                </a>
             </div>
         </div>
         <div>
@@ -47,7 +45,7 @@
     <main class="flex bg-gray-800  justify-between place-items-center w-full h-screen">
         <div class="bg-purple-700 h-full w-40">TESTING</div>
         <div class="">
-            <img src="artwork.jpg" alt="">
+            <img class="transform scale-150" src="artwork.png" alt="">
         </div>
         <div  class="bg-purple-700 h-full w-40">TESTING</div>
     </main>

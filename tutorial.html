@@ -6,35 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painting With Music</title>
     <script src="homepage.js"></script>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="tutorial.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41bf6b2e83.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body class="bg-gray-700">
-    <header class="flex justify-between h-20 place-items-center px-4 py-3 top-0" style="background: url('navBack.jpg') no-repeat; background-size: cover;">
-        <!-- <div>
-            <button type="button" onclick="">
-                <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
-            </button>
-        </div> -->
-        <div class="text-purple-400 text-4xl">
-            Tutorial
-        </div>
-        <div>
-            <a href="freeplay.html" class="text-purple-100">
-                <span>Free Play</span>
-            </a>
-            <a href="coloring.html" class="text-purple-100">
-                <span>Coloring Play</span>
-            </a>
-            <a href="tutorial.html" class="text-purple-100">
-                <span>Tutorial</span>
-            </a>
-        </div>
+    
+
+    <header class="flex flew-wrap place-items-center h-20 px-4 py-3 z-10 absolute w-screen" style="background: url('navBack.jpg') no-repeat; background-size: cover;">
         <div>
             <i class="fas fa-palette fa-3x text-purple-400"></i>
+        </div>
+        <div class="text-purple-400 sm:text-lg lg:text-3xl px-3 py-3 flex-1 justify-between items-center">
+            <a href="homepage.html" id="title">Painting with Music</a>
+        </div>
+        <div class="text-purple-200 text-5xl ml-64 tracking-wider mt-2" id="title">Tutorial</div>
+        <div class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-column">
+                <a href="freeplay.html"
+                    class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Free Play</span>
+                </a>
+                <a href="coloring.html"
+                    class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Coloring Play</span>
+                </a>
+                <a href="tutorial.html"
+                    class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Tutorial</span>
+                </a>
+                <a href="tutorial.html"
+                    class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>About</span>
+                </a>
+                <!-- <a href="tutorial.html"
+                    class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                    <span>Testing</span>
+                </a> -->
+            </div>
+        </div>
+        <div>
+            <button type="button" class="inline-flex rounded lg:hidden">
+                <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
+            </button>
         </div>
     </header>
 

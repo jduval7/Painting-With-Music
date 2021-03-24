@@ -14,13 +14,14 @@
 
 <body>
     <div>
-        <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3 z-10 absolute w-screen">
-            <!-- <div>
+        <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3 z-10 absolute w-screen"  style="background: url('navBack.jpg') no-repeat; background-size: cover;">
+            <div>
                 <i class="fas fa-palette fa-3x text-purple-400"></i>
-            </div> -->
-            <div class="text-purple-400 sm:text-lg lg:text-4xl px-3 py-3 flex-1 justify-between items-center">
-                <span>Painting With Music</span>
             </div>
+            <div class="text-purple-400 sm:text-lg lg:text-3xl px-3 py-3 flex-1 justify-between items-center">
+                <a href="homepage.html" id="title">Painting with Music</a>
+            </div>
+            <div class="text-purple-200 text-5xl ml-64 tracking-wider mt-2" id="title">Free Play</div>
             <div class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
                 <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-column">
                     <a href="freeplay.html"
@@ -39,10 +40,10 @@
                         class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
                         <span>About</span>
                     </a>
-                    <a href="tutorial.html"
+                    <!-- <a href="tutorial.html"
                         class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
                         <span>Testing</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div>
@@ -76,16 +77,22 @@
                 <div class="h-20 bg-purple-700 absolute bottom-0 w-full border-0 border-none"></div>
             </div>
             <div class="bg-purple-700 h-full w-1/6 border-none">
-                <div class="bg-yellow-50">
-                    <input id="slider" min="0" max="100" list="steplist" class="absolute rounded-full mt-64"
-                        type="range" orient="vertical" style="top: 40%; transform: rotate(270deg);" />
-                    <datalist id="steplist">
-                        <option>0</option>
-                        <option>25</option>
-                        <option>50</option>
-                        <option>75</option>
-                        <option>100</option>
-                    </datalist>
+                <div class="bg-yellow-50 flex flex-wrap items-center justify-center">
+                    <div class="w-full">
+                        <input id="sliderBW" min="0" max="100" list="steplist" class="absolute rounded-full"
+                            type="range" orient="vertical" style="top: 40%; transform: rotate(270deg);" />
+                    </div>
+                    <div class="w-full">
+                        <input id="slider" min="0" max="100" list="steplist" class="absolute rounded-full mt-64"
+                            type="range" orient="vertical" style="top: 50%; transform: rotate(270deg);" />
+                        <datalist id="steplist">
+                            <option>0</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>75</option>
+                            <option>100</option>
+                        </datalist>
+                    </div>
                 </div>
             </div>
         </main>
