@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painting With Music</title>
     <script src="freeplay.js"></script>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="freeplay.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41bf6b2e83.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="bg-gray-900 flex justify-between h-20 place-items-center px-4 py-3">
-        <div>
-            <button type="button" onclick="changePage()">
-                <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
-            </button>
-        </div>
-        <div class="text-purple-400 text-4xl">
-            Free Play
-        </div>
-        <div>
-            <a href="freeplay.html" class="text-purple-100">
-                <span>Free Play</span>
-            </a>
-            <a href="coloring.html" class="text-purple-100">
-                <span>Coloring Play</span>
-            </a>
-            <a href="tutorial.html" class="text-purple-100">
-                <span>Tutorial</span>
-            </a>
-        </div>
-        <div>
-            <i class="fas fa-palette fa-3x text-purple-400"></i>
-        </div>
-    </header>
+    <div>
+        <header class="bg-gray-900 flex flew-wrap place-items-center h-20 px-4 py-3 z-10 absolute w-screen">
+            <!-- <div>
+                <i class="fas fa-palette fa-3x text-purple-400"></i>
+            </div> -->
+            <div class="text-purple-400 sm:text-lg lg:text-4xl px-3 py-3 flex-1 justify-between items-center">
+                <span>Painting With Music</span>
+            </div>
+            <div class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-column">
+                    <a href="freeplay.html"
+                        class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                        <span>Free Play</span>
+                    </a>
+                    <a href="coloring.html"
+                        class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                        <span>Coloring Play</span>
+                    </a>
+                    <a href="tutorial.html"
+                        class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                        <span>Tutorial</span>
+                    </a>
+                    <a href="tutorial.html"
+                        class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                        <span>About</span>
+                    </a>
+                    <a href="tutorial.html"
+                        class="text-purple-300 lg:inline-flex lg:w-auto px-3 py-2  hover:text-white hover:border-indigo-400 border-transparent border-b-2">
+                        <span>Testing</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="inline-flex rounded lg:hidden">
+                    <i class="fas fa-bars fa-3x text-purple-400 hover:text-purple-300"></i>
+                </button>
+            </div>
+        </header>
 
-    <main class="flex bg-gray-800  justify-between place-items-center w-full h-screen">
-        <div class="bg-purple-700 h-full w-40">TESTING</div>
-        <div class="">
-            <img src="artwork.jpg" alt="">
-        </div>
-        <div  class="bg-purple-700 h-full w-40">TESTING</div>
-    </main>
-
+        <main class="flex bg-gray-800  w-full h-screen">
+            <div class="bg-purple-700 h-full w-1/6 border-0 border-none">
+                <select class="select-css w-64 mt-40 ml-3 mb-5">
+                    <option>Select a Key</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                    <option>F</option>
+                    <option>G</option>
+                    <option>G#</option>
+                </select>
+                <button class="rounded-full bg-pink-300 px-3 py-2 ml-3 mr-6">Clear Canvas</button>
+                <button class="rounded-full bg-pink-300 px-3 py-2">Screenshot</button>
+            </div>
+            <div class="bg-gray-800 z-0 relative flex flex-wrap mt-16">
+                <div class="h-24 bg-purple-700 w-full border-0 border-none"></div>
+                <div class="w-full h-full flex items-center justify-center">
+                    <img class="transform scale-50" src="painting.jpg" alt="">
+                </div>
+                <div class="h-20 bg-purple-700 absolute bottom-0 w-full border-0 border-none"></div>
+            </div>
+            <div class="bg-purple-700 h-full w-1/6 border-none">
+                <div class="bg-yellow-50">
+                    <input id="slider" min="0" max="100" list="steplist" class="absolute rounded-full mt-64"
+                        type="range" orient="vertical" style="top: 40%; transform: rotate(270deg);" />
+                    <datalist id="steplist">
+                        <option>0</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>75</option>
+                        <option>100</option>
+                    </datalist>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>
